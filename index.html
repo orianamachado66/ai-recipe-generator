@@ -19,19 +19,22 @@
     <div class="container">
       <header><h1>AI recipe generator!</h1></header>
       <main>
-        <form id="recipe-generator-form">
-          <input
-            type="text"
-            placeholder="Enter an ingredient here"
-            required
-            autocomplete="off"
-            class="ingredient"
-            id="user-ingredient-submit"
-          />
-          <input type="submit" value="Search" class="button" />
-        </form>
+        <div class="formContainer">
+          <form id="recipe-generator-form">
+            <input
+              type="text"
+              placeholder="Enter an ingredient here"
+              required
+              autocomplete="off"
+              class="ingredient"
+              id="user-ingredient-submit"
+            />
+            <input type="submit" value="Search" class="button" />
+          </form>
+          <small>Examples: Chocolate dessert; Grilled salmon;</small>
+        </div>
 
-        <div class="recipe" id="recipe"></div>
+        <div class="recipe hidden" id="recipe"></div>
       </main>
 
       <footer>
